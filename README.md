@@ -41,26 +41,22 @@ TECH-Solidity-Study
 
 **["TECH-Solidity-Study" 레파지토리로부터 내 레파지토리 만들고(fork), 로컬에 복제하기(clone)]**
 
-1. "TECH-Solidity-Study" 레파지토리를 fork한다(이때, "Copy the main branch only”를 체크 해제).
-    - "TECH-Solidity-Study" 레파지토리 상단 fork 버튼 클릭
+0. 로컬에 작업공간 생성하기
+    - git init
+1. "HIBL-2G의 TECH-Solidity-Study" 레파지토리를 fork한다(이때, "Copy the main branch only”를 체크 해제).
+    - 상단 fork 버튼 클릭
 2. fork한 레파지토리를 로컬 컴퓨터에 clone한다.
     - git clone [내 레파지토리 주소]
 3. 연결된 원격 저장소 확인 후 upstream을 추가한다.
-    1. 터미널에 `git remote -v` 를 입력한다. 아래와 같이 뜰 것이다.
-        
-        ```jsx
-        origin "자신의 레파지토리 주소" (fetch)
-        origin "자신의 레파지토리 주소" (push)
-        ```
-        
-    2. `git remote add upstream "TECH-Solidity-Study 레파지토리 주소"` 로 upstream을 설정한다.
+    1. `git remote add origin "내 레파지토리 주소"` 로 origin을 설정한다.
+    2. `git remote add upstream "HIBL-2G의 TECH-Solidity-Study 레파지토리 주소"` 로 upstream을 설정한다.
     3. `git remote -v`로 upstream 추가 여부를 확인한다.
         
         ```jsx
         origin "자신의 레파지토리 주소" (fetch)
         origin "자신의 레파지토리 주소" (push)
-        upstream "TECH-Solidity-Study 레파지토리 주소" (fetch)
-        upstream "TECH-Solidity-Study 레파지토리 주소" (push)
+        upstream "HIBL-2G의 TECH-Solidity-Study 레파지토리 주소" (fetch)
+        upstream "HIBL-2G의 TECH-Solidity-Study 레파지토리 주소" (push)
         ```
         
     
@@ -77,7 +73,7 @@ TECH-Solidity-Study
 2. **작업 전, `git pull upstream` 으로 원격 저장소와 로컬 저장소를 동기화**시켜준다.
     - 원격 레파지토리의 변화를 로컬에 반영할 수 있다.
 3. 작업을 한다.
-4. 변경된 파일을 staging 후 commit하고, **origin**의 **자신 브랜치에** push한다
+4. 변경된 파일을 staging 후 commit하고(각자 서치), **origin**의 **자신 브랜치에** push한다
     - `git push origin “자신의브랜치”`
     
     **주의사항 : upstream에 푸시하지 않는다.**
