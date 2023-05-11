@@ -41,13 +41,12 @@ TECH-Solidity-Study
 
 **["TECH-Solidity-Study" 레파지토리로부터 내 레파지토리 만들고(fork), 로컬에 복제하기(clone)]**
 
-0. 로컬에 작업공간 생성하기
-    - git init
 1. "HIBL-2G의 TECH-Solidity-Study" 레파지토리를 fork한다(이때, "Copy the main branch only”를 체크 해제).
     - 상단 fork 버튼 클릭
 2. fork한 레파지토리를 로컬 컴퓨터에 clone한다.
     - git clone [내 레파지토리 주소]
 3. 연결된 원격 저장소 확인 후 upstream을 추가한다.
+    0. `git init` : 로컬의 작업공간 초기화하기
     1. `git remote add origin "내 레파지토리 주소"` 로 origin을 설정한다.
     2. `git remote add upstream "HIBL-2G의 TECH-Solidity-Study 레파지토리 주소"` 로 upstream을 설정한다.
     3. `git remote -v`로 upstream 추가 여부를 확인한다.
@@ -55,8 +54,8 @@ TECH-Solidity-Study
         ```jsx
         origin "자신의 레파지토리 주소" (fetch)
         origin "자신의 레파지토리 주소" (push)
-        upstream "HIBL-2G의 TECH-Solidity-Study 레파지토리 주소" (fetch)
-        upstream "HIBL-2G의 TECH-Solidity-Study 레파지토리 주소" (push)
+        upstream "HIBL-2G의 레파지토리 주소" (fetch)
+        upstream "HIBL-2G의 레파지토리 주소" (push)
         ```
         
     
